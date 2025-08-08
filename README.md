@@ -12,3 +12,20 @@ with open(file_path, "a") as f:
 subprocess.run(["git", "add", file_path])
 subprocess.run(["git", "commit", "-m", "Daily update"])
 subprocess.run(["git", "push"])
+# GitHub Activity Keeper 🟢
+
+This script helps you stay active on GitHub by making automatic daily commits.
+
+## How It Works
+
+- Updates a `daily_log.txt` file with the current date/time
+- Automatically commits and pushes the change
+
+## How to Use
+
+1. Clone your GitHub repo or create a new one.
+2. Add this script inside the repo.
+3. Run it manually or schedule it to run daily.
+
+```bash
+python3 daily_commit.py
